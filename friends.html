@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friends</title>
+    <meta name="auther" content="Nasr Shamalkh">
+    <meta name='description' content="The world's leading fitness site. Where you dreams come ture.">
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>#Fitness. Your way to a better life.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="sport.html">Sports</a></li>
+            <li><a href="posts.html">Workout Posts</a></li>
+            <li><a href="total.html">Weakly Total</a></li>
+            <li><a href="#">Friends</a></li>
+        </ul>
+    </nav>
+    <section id="friends-section">
+        <main id="friends-main">
+            <h1>Friends</h1>
+            <ul id="friends-list">
+
+            </ul>
+            <p id='friends-num'></p>
+        </main>
+    <aside id="friends-aside">
+        <h1>People you might like.</h1>
+        <ul>
+            <li id="link1" value='jakc'><p>Jack Sparrow</p> <button id="button1" type="button">Add</button></li>
+            <li id="link2" value="hekctor"><p>Hecktor barbosa</p><button id="button2" type="button">Add</button></li>
+            <li id="link3" value='gips'><p>Mr.Gips</p><button id="button3" type="button">Add</button></li>
+        </ul>
+    </aside>
+    </section>
+    <footer>
+            <p>This website is scripted and coded by Nasr Shamalkh</p>
+            <p><u>Email: naaaa9sr-@hotmail.com</u></p>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        let friendsArr = ["Jon Snow", "Sir.Joura", "Mother of Dragons"];
+        let sugFriendsArr = ['Jack sparrow', "Hecktor barbosa", "MR.Gips"];
+        let para = document.getElementById("friends-num");
+        para.textContent = "You have " + friendsArr.length + " Friends";
+        function insertFriends (arr) {
+            for (var i = 0; i < arr.length; i++) {
+                $('#friends-list').append("<li><p>" + arr[i] + "</p></li>");
+            }
+        }
+        insertFriends(friendsArr);
+        $('#button1').on('click', function() {
+            $('#friends-list').append('<li><p>' + $('#link1').children('p').text() + '</p></li>');
+            $('#link1').remove();
+            para.textContent = "You have " + (friendsArr.length++) + " Friends";
+        });
+        $('#button2').on('click', function() {
+            $('#friends-list').append('<li><p>' + $('#link2').children('p').text() + '</p></li>');
+            $('#link2').remove();
+            para.textContent = "You have " + (friendsArr.length++) + " Friends";
+        });
+        $('#button3').on('click', function() {
+            $('#friends-list').append('<li><p>' + $('#link3').children('p').text() + '</p></li>');
+            $('#link3').remove();
+            para.textContent = "You have " + (friendsArr.length++) + " Friends";
+        });
+        
+    </script>
+</body>
+</html>

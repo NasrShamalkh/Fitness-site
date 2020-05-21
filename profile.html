@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Athlete profile</title>
+    <meta name="auther" content="Nasr Shamalkh">
+    <meta name='description' content="The world's leading fitness site. Where you dreams come ture.">
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>#Fitness. Your way to a better life.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="sport.html">Sports</a></li>
+            <li><a href="posts.html">Workout Posts</a></li>
+            <li><a href="total.html">Weakly Total</a></li>
+            <li><a href="friends.html">Friends</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img id='profilePic' src="https://www.pngkey.com/png/full/52-522921_kathrine-vangen-profile-pic-empty-png.png">
+        <div id="bio">
+                <div class="bio-item"><p id="age">Age: </p></div>
+                <div class="bio-item"><p id="gender">Gender: </p></div>
+                <div class="bio-item"><p id="weight">Weight: </p></div>
+                <div class="bio-item"><p id="height">Height: </p></div>
+        </div>
+        <div id="motto-container">
+            <p>Always keep in mind</p>
+            <h2>NO PAIN NO GAIN.</h2>
+        </div>
+        <div id="welcome">
+            <h1 id='welcome-h1'>Welcome</h1>
+        </div>
+    </main>
+    <footer>
+        <p>This website is scripted and coded by Nasr Shamalkh</p>
+        <p><u>Email: naaaa9sr-@hotmail.com</u></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+         function CreateUser(first, last, age, gender, weight, height) {
+    this.name = {
+        first: first,
+        last: last
+    };
+    this.gender = gender;
+    this.age= age;
+    this.weight = weight;
+    this.height = height;
+}
+let tony = new CreateUser("Tony", "Stark", 32, 'male', '225 pounds', '6 Feet');
+let age = document.getElementById('age');
+let gender = document.getElementById('gender');
+let weight = document.getElementById('weight');
+let height = document.getElementById('height');
+let welcome = document.querySelector('#welcome-h1');
+welcome.textContent += " " + tony.name.first + " " + tony.name.last;
+age.textContent += " " + tony.age;
+gender.textContent += " " + tony.gender;
+weight.textContent += " " + tony.weight;
+height.textContent += ' ' + tony.height;
+    </script>
+</body>
+</html>

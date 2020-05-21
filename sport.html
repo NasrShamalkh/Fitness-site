@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports</title>
+    <meta name="auther" content="Nasr Shamalkh">
+    <meta name='description' content="The world's leading fitness site. Where you dreams come ture.">
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>#Fitness. Your way to a better life.</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="posts.html">Workout Posts</a></li>
+            <li><a href="total.html">Weakly Total</a></li>
+            <li><a href="friends.html">Friends</a></li>
+        </ul>
+    </nav>
+    <main id="sports-main">
+        <div style="width: 50%; display: flex; flex-direction: row">
+            <ul class="sports-list-ul">
+                <li><p>Running</p></li>
+                <li><p>Biking</p></li>
+                <li><p>Walking</p></li>
+                <li><p>Swiming</p></li>
+                <li><p>Rowing</p></li>
+            </ul>
+            <ul id="new-sports" class="sports-list-ul">
+                    
+            </ul>
+        </div>
+        <div style="width: 50%" id="input-div">
+            <label for="sports-input">Would you like to add other sports?<br>
+                <input id="sports-input" type="text" placeholder="Soccer, Basket Ball, Cardio, Yoga..."><button id="sports-button">Add!</button>
+            </label>
+        </div>
+    </main>
+    <footer>
+        <p>This website is scripted and coded by Nasr Shamalkh</p>
+        <p><u>Email: naaaa9sr-@hotmail.com</u></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $('#sports-button').on('click', function() {
+    $('#new-sports').append('<li>' + '<p>' + $("#sports-input").val()+ '</p>' + '</li>');
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+
+html {
+    background-color: #5CDB95;
+}
+h1,h2 {
+    color: #EDF5E1;
+}
+button {
+    background-color: #EDF5E1;
+    color: #05386B;
+}
+button:hover {
+    background-color:#5CDB95;
+    color: #EDF5E1;
+}
+a {
+    color:#EDF5E1;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+a:hover {
+    height: 20px;
+    border-radius: 5px;
+    border-color: #05386B;
+    background-color:#EDF5E1;
+    color: #05386B;
+    
+}
+input {
+    background-color: #c0f1d6;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    text-align: center;
+    border-style: solid;
+    background-color: #05386B;
+    color:#EDF5E1;
+}
+#profilePic {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+#bio {
+    text-align: center;
+    display: block;
+}
+.bio-item {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 5px auto 5px auto;
+    text-align: left;
+    padding-left: 2px;
+    color: #EDF5E1;
+}
+footer {
+    padding-left: 5px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0px;
+    background-color:#05386B;
+    color: #EDF5E1;
+    height: 100px;
+}
+#motto-container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 180px;
+    left: 950px;
+    transform: rotate(-25deg);
+}
+#welcome {
+    position: absolute;
+    bottom: 400px;
+    left: 10px;
+}
+.sports-list-ul {
+    list-style: none;
+    width: 500px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.sports-list-ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    background-color: #05386B;
+}
+.sports-list-ul li p {
+    font-size: 18px;
+    color: white;
+}
+#sports-main {
+    display: flex;
+}
+#sports-input {
+    width: 500px;
+    height:30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#input-div {
+    padding-top: 100px;
+}
+#sports-button {
+    width: 73px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+#post-output-div ul {
+    list-style: none;
+}
+#post-input-div {
+    width: 50%;
+    height: 380px;
+}
+#post-output-div {
+    height: 380px;
+    width: 50%;
+}
+#posts-main {
+    display: flex;
+    flex-direction: row;
+
+}
+.post-input {
+    width: 152px;
+    margin-top: 100px;
+}
+#post-button {
+    width: 90px;
+    height: 50px;
+    border-radius: 20px;
+    display: block;
+    margin: 30px auto;
+}
+#post-output-div {
+    text-align: center;
+    background-color: #abedc9;
+    border-radius: 20px;
+    border-color: white;
+}
+#friends-main {
+    width: 65%;
+}
+#friends-aside {
+    width: 35%;
+}
+#friends-section {
+    display: flex;
+}
+#main-div {
+    display: flex;
+    flex-direction: row;
+}
+#time-div {
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    padding-top: 50px;
+}
+#distance-div {
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    padding-top: 50px;
+}
+#time-para, #distance-para {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 150px;
+    bottom: 210px;
+    font-size: 20px;
+    font-family: arial;
+}
+#friends-aside ul {
+    list-style: none;
+}
+#friends-aside ul li{
+    margin-right: 10px;
+}
+#button1, #button2, #button3 {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+}

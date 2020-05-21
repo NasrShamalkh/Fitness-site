@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weekly total</title>
+    <meta name="auther" content="Nasr Shamalkh">
+    <meta name='description' content="The world's leading fitness site. Where you dreams come ture.">
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>#Fitness. Your way to a better life.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="sport.html">Sports</a></li>
+            <li><a href="posts.html">Workout Posts</a></li>
+            <li><a href="#">Weakly Total</a></li>
+            <li><a href="friends.html">Friends</a></li>
+        </ul>
+    </nav>
+    <main id="total-main">
+        <h1 style="margin-left: 20px">Weekly Process</h1>
+        <div id="main-div">
+            <div id='time-div'>
+            <img width="250px" src="https://www.pngkit.com/png/full/148-1483248_circle-logo-png-image-stock-portable-network-graphics.png">
+            <h2>Time</h2>
+            <p id="time-para"></p>
+        </div>
+        <div id="distance-div">
+            <img width="250px" src="https://www.pngkit.com/png/full/148-1483248_circle-logo-png-image-stock-portable-network-graphics.png">
+            <h2>Distance</h2>
+            <p id='distance-para'></p>
+        </div>
+        </div>
+    </main>
+    <footer>
+            <p>This website is scripted and coded by Nasr Shamalkh</p>
+            <p><u>Email: naaaa9sr-@hotmail.com</u></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        function CreateTotal(time, distance) {
+            this.time = time;
+            this.distance = distance;
+        }
+        let tot1 = new CreateTotal(5, 7);
+        let timePara = document.getElementById('time-para');
+        let distancePara = document.getElementById('distance-para')
+        timePara.textContent = tot1.time + ' Hours';
+        distancePara.textContent = tot1.distance + " Km";
+    </script>
+</body>
+</html>
